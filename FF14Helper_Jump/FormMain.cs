@@ -49,11 +49,11 @@ namespace FF14Helper_Jump
                 Text_P1D.Text = Settings.Default.P1D + "";
                 Text_P5S.Text = Settings.Default.P5S + "";
                 Text_P3S.Text = Settings.Default.P3S + "";
-                Text_P1S.Text = Settings.Default.P1S + "";
+                Text_P1S.Text = Settings.Default.P1S + "";            
             }
             catch
             {
-                MessageBox.Show("数据读取有误, 请重新保存");
+                MessageBox.Show("数据读取有误, 程序失败");
             }
         }
 
@@ -239,7 +239,7 @@ namespace FF14Helper_Jump
 
                 Settings.Default.Save();
             }
-            catch
+            catch(Exception ex)
             {
                 MessageBox.Show("输入有问题\n建议重修封闭圣塔黎铎拉纳大灯塔Boss3劳动七号");
             }
