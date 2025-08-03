@@ -15,7 +15,7 @@ namespace FF14Helper_Jump
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Main());
+            Application.Run(new FormMain());
         }
     }
 }
